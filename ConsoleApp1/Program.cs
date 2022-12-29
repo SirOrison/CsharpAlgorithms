@@ -25,16 +25,7 @@
     {
         return minutes + (layers * 2);
     }
-    public static void Main(string[] args)
-    {
-        Lasagna lasagna = new Lasagna();
-
-        int minutes = lasagna.ExpectedMinutesInOven();
-
-        Console.WriteLine(lasagna.RemainingMinutesInOven(30));
-    }    
-
-    
-
+     
+    //exercism exercise 2
     
 }
