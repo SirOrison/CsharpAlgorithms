@@ -1,31 +1,18 @@
-﻿class Lasagna
+﻿using System;
+
+namespace TestConsole
 {
-    // TODO: define the 'ExpectedMinutesInOven()' method
-    public int ExpectedMinutesInOven()
+    class Program
     {
-        int minutes = 40;
-        return minutes;
-    }
+        static void Main(string[] args)
+        {
+            Lasagna lasagna = new Lasagna();
 
-    // TODO: define the 'RemainingMinutesInOven()' method
-    public int RemainingMinutesInOven(int minutes)
-    {
-        
-        return ExpectedMinutesInOven() - minutes ;
-    }
+            int minutes = lasagna.ExpectedMinutesInOven();
 
-    // TODO: define the 'PreparationTimeInMinutes()' method
-    public int PreparationTimeInMinutes(int layers)
-    {
-        return layers * 2;
+            Console.WriteLine(lasagna.RemainingMinutesInOven(30));
+        }
     }
-
-    // TODO: define the 'ElapsedTimeInMinutes()' method
-    public int ElapsedTimeInMinutes(int layers, int minutes)
-    {
-        return minutes + (layers * 2);
-    }
-     
-    //exercism exercise 2
-    
 }
+
+
