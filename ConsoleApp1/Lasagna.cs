@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TestConsole
 {
-    public class Lasagna
+    class Lasagna
     {
         // TODO: define the 'ExpectedMinutesInOven()' method
         public int ExpectedMinutesInOven()

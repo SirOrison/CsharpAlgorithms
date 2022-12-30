@@ -11,6 +11,10 @@ namespace TestConsole
             int minutes = lasagna.ExpectedMinutesInOven();
 
             Console.WriteLine(lasagna.RemainingMinutesInOven(30));
+
+            QuestLogic logic = new QuestLogic();
+
+            Console.WriteLine(logic.CanFastAttack(false)); 
         }
     }
 }
