@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp1;
+using System;
 
 namespace TestConsole
 {
@@ -6,15 +7,13 @@ namespace TestConsole
     {
         static void Main(string[] args)
         {
-            Lasagna lasagna = new Lasagna();
 
-            int minutes = lasagna.ExpectedMinutesInOven();
+            Basics basics = new Basics();
 
-            Console.WriteLine(lasagna.RemainingMinutesInOven(30));
+            Console.WriteLine("Input a number to square");
 
-            QuestLogic logic = new QuestLogic();
-
-            Console.WriteLine(logic.CanFastAttack(false)); 
+            int x = Convert.ToInt32(Console.ReadLine());
+            basics.add(x);
         }
     }
 }
