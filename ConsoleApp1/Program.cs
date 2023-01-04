@@ -1,19 +1,17 @@
-﻿using ConsoleApp1;
-using System;
+﻿using System;
 
 namespace TestConsole
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] arg)
         {
 
             Basics basics = new Basics();
 
-            Console.WriteLine("Input a number to square");
+            
 
-            int x = Convert.ToInt32(Console.ReadLine());
-            basics.add(x);
+            basics.MathFunction(-10,10);
         }
     }
 }
